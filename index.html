@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+        <p>Track your movements and calories effortlessly</p>
+    </header>
+    
+    <main>
+        <section class="dashboard">
+            <div class="card">
+                <h2>Live Camera</h2>
+                <video id="video" autoplay playsinline></video>
+            </div>
+            <div class="card">
+                <h2>Tracking Details</h2>
+                <p>Ath Nawaddi Status: <span id="poseStatus">Not Detected</span></p>
+                <p>Calories Burned: <span id="calories">0</span> kcal</p>
+                <p>Total Moves: <span id="totalMoves">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fitness Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+    <script src="app.js"></script>
+</body>
+</html>
